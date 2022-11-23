@@ -10,5 +10,6 @@ class CategoryTest < ActiveSupport::TestCase
     test "name should not have less than 5 characters" do
         category = Category.new
         category.name = 'cat'
-        assert_not category.save "Saved the Category with name less than 5 characters"
+        assert_not category.save, "Saved the Category with name less than 5 characters"
+    end
 end
